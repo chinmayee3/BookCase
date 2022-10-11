@@ -64,7 +64,7 @@ title {
   font-size: 3rem;
   text-align: center;
   margin-top: 8%;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
   text-transform: uppercase;
 }
 .gallery-icon {
@@ -78,8 +78,9 @@ title {
   border-radius: 0;
 }
 .lead {
-  margin-top: 35%;
   font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10%;
 }
 .navbar {
   background-color: black;
@@ -125,6 +126,26 @@ title {
 .cursor {
   border-right: 4px solid rgba(255, 255, 255, 0.75);
   animation: blink 1000ms ease-in infinite;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #031937;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
 
 @keyframes blink {
@@ -212,4 +233,20 @@ title {
   .display-3 {
     font-size: 6rem;
   }
+}
+
+.card-title {
+  color: #94000f;
+}
+
+.input-group {
+  display: flex !important;
+  place-items: flex-end !important;
+  align-content: space-around !important;
+  flex-direction: column !important;
+  padding-bottom: 1.1em;
+}
+
+#search-result {
+  font-style: italic;
 }
